@@ -4,6 +4,7 @@ from base.views import *
 
 
 urlpatterns = [
+    path('login/', loginPage, name="login"),
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('room/<str:pk>/' ,room, name='room'),
