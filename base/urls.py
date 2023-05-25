@@ -5,6 +5,7 @@ from base.views import *
 
 urlpatterns = [
     path('login/', loginPage, name="login"),
+    path('logout/', logoutUser, name="logout"),
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('room/<str:pk>/' ,room, name='room'),
